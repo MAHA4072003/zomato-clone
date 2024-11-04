@@ -1,0 +1,449 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    width: 100%;
+}
+.container{
+    width: 83%;
+    margin: auto;   
+}
+.header{
+    position: relative;
+    height: 420px;
+}
+
+.image-content{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+.image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+.main-header-section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+.nav{
+    font-weight: 550;
+    height: 50px;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logocontainer{
+    display: flex;
+    align-items: center;
+}
+.logocontainer p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    padding: 0px 3px;
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+.zomato-logo{
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    bottom: 100px;
+}
+.container-header-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    flex-direction: column;
+}
+.main-header-content{
+    position: relative;
+    top: -50%;
+}
+.header-body-section-discover{
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+    margin: 25px 0;
+}
+.search-container{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    max-width: 770px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+.location-map{
+    color: rgb(238, 112, 112);
+    font-size: 18px;
+}
+.caret-up{
+    color: black;
+}
+.detection-location input{
+    border: none;
+    font-size: 15px;
+    width: 190px;
+}
+.search-bar{
+    color: rgb(138, 138, 138);
+}
+.line{
+    padding: 9px;
+    color: black;
+}
+.search-bar input{
+    max-width: 100%;
+    width: 400px;
+    font-size: 15px;
+    border: none;
+    padding: 5 10px;
+    outline: none;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.cards .crd img{
+    width: 360px;
+    height: 220px;
+    border-radius: 25px;
+    margin-top: 35px;
+    padding: 10px;
+    padding-bottom: 50px;
+    object-fit: cover;
+    left: 300px;
+    position: relative;
+    left: 140px;
+}
+/** section 1 features***/
+.section-1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.container-features{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial;  
+}
+.features{
+    overflow: hidden;
+    border-radius: 18px;
+    border: 0.1px solid rgb(214, 213, 213);
+}
+.features-image{
+    width: 360px;
+    height: 180px;
+    overflow: hidden;  
+}
+.features-image img{
+    width: 100%;
+    background-position: 100px;
+}
+.features h3{
+    padding-left: 20px;
+    font-size: 21px;
+    font-family:  Lucida Sans Unicode;
+}
+.features P{
+    padding-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 82, 82);
+}
+.features:hover{
+    transition: transform 0.7s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/***section 2***/
+.section-2-left h1{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.section-2-left p{
+    font-size: 18px;
+    margin-top: 0;
+    
+    
+}  
+.section-2-top{
+    display: flex;
+    align-items: center;
+    color: rgb(102, 100, 100);
+    font-family:Lucida Sans Unicode;
+
+   
+}
+.section-2-Right{
+    align-self: flex-end;
+    color: rgb(248, 79, 79);
+    padding-left: 100px;
+}
+.section-2-item{
+    max-width: 267px;
+    height: 320px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 0.7em;
+}
+.section-2-item:first-child{
+    margin-left: 0;
+}
+.section-2-item img{
+    width: 100%;
+    height: 100%;
+}
+.section-2-image-describtion{
+    padding:0 20px;
+    padding-bottom: 8px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    color: white;
+    font-family:sans-serif;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: inset 00px -00px 50px rgba(0,0,0,0.1),
+    inset 0px 00px 50px rgba(0,0,0,0.1);
+
+}
+.section-2-image-describtion p{
+    margin: 0;
+    font-size: 18px;
+}
+.section-2-image-describtion p:nth-child(2){
+    font-size: 18px;
+}
+.section-2-body{
+    display: flex;
+
+}
+
+/*** section-3***/
+.section-3{
+    margin: 100px 0;
+    color: rgb(70, 67, 67);
+}
+.section-3 h1{
+    font-size: 35px;
+    font-weight: 200; 
+    font-family: sans-serif; 
+}
+.section-3 h3{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+}
+.section-3 p{
+    font-size: 18px;
+    font-size: 16px;
+    margin: 0;
+    justify-self: flex-end;
+    font-family: sans-serif;
+}
+.localities_list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    min-width: 350px;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    height: 80px;
+    margin: 10px;
+}
+.localities_card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.localities_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+/*** section-4***/
+.section-4{
+    display: flex;
+    margin: auto;
+    width: 900px;
+    /*background-color: rgb(248, 242, 191);*/
+    color: rgb(82, 81, 81);
+    align-items: center;
+    height: 500px;
+    font-family: sans-serif;
+}
+h1{
+    color: black;
+}
+.zomato-app-image{
+    height: 40%;
+    width: 300px;    
+}
+.zomato-app-image img{
+    width: 100%;
+}
+.zomato-app-details h1{
+    font-size: 50px;
+    margin-top: 0;
+}
+.zomato-app-details p{
+    font-size: 19px;
+    
+    color: rgb(61, 60, 60);
+}
+.zomato-app-input{
+    display: flex;
+    height: 45px;
+    margin: 7px 0px;
+    margin: 20px 0px;
+}
+.input-container-zomato-app{
+    height: 100%;
+}
+.input-container-zomato-app select, .input-container-zomato-app input{
+    height: 100%;
+}
+.input-container-zomato-app input{
+    width: 290px;
+    max-width: 300px;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.zomato-app-btn{
+    color: white;
+    background-color: rgb(239, 79, 95);
+    width: 170px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.zomato-radio-btn{
+    margin: 5px 0;
+    font-size: 18px;
+    color: rgb(94, 90, 90);
+}
+#email{
+    color: rgb(156, 155, 155);  
+}
+.download-app{
+    display: flex;
+}
+.download-app img{
+    width: 100%;
+    max-width: 130px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+/*section-5*/
+.section-5{
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+.section-5 h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    color: rgb(17, 37,37);
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+.section-5 h2{
+    font-family: sans-serif;
+    font-weight: 80;
+}
+.section-5-collapse-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /*margin: 50px 0px;
+    /*height: 70px;*/
+    color: rgb(65, 64, 64);
+}
+.section-5-collapse{
+    border: 1px solid rgb(190, 190, 190);
+    margin: 5px 0px;
+    margin-top: 20px;
+    padding: 0px 20px;
+    border-radius: 8px;
+}
+.section-5-collapse p{
+    font-size: 18px;
+    color: rgb(109, 107, 107);
+}
+.dot{
+    padding:0px;
+    height: 5px;
+    width: 5px;
+    padding: 5px;
+}
+.popularcityName{
+    color: rgb(112, 110, 110);
+    text-decoration: none;
+}
+#popularcityId{
+    display: none;    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }  
+  td {
+    padding: 8px;
+    padding-left: 110px;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    color: rgb(87, 85, 85);   
+  }
+  th {
+    padding: 8px;
+    padding-left: 110px;
+    text-align: left;
+    font-family: Lucida Sans Unicode;;
+    color: rgb(12, 12, 12);
+    word-spacing: 5px; 
+  }
+  
+  
